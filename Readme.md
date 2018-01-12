@@ -12,7 +12,7 @@ The script files make use of the *Python* package [VPython](http://vpython.org/)
 # Table of Contents
 
 For more information see:
-1. [Scripts](py-scripts/)
+1. [Scripts](scripts/)
 2. [Installation instructions and usage](#install)
 	* [Installation instruction for Linux based systems and MacOS](#install-linux)
 	* [Installation instruction for Windows systems](#install-windows)
