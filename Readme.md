@@ -1,5 +1,5 @@
 # A primer to numerical simulations: The perihelion motion of Mercury
-This is the script repository for the publication [work](link).
+This is the script repository for an upcoming publication.
 
 > **Abstract:** Numerical simulations are playing an increasingly important role in modern science.
 In the [work](link) it is suggested to use a numerical study of the famous perihelion motion of the planet Mercury (one of the prime observables supporting Einsteins General Relativity) as a test case to teach numerical simulations to high school students.
@@ -12,7 +12,7 @@ The script files make use of the *Python* package [VPython](http://vpython.org/)
 # Table of Contents
 
 For more information see:
-1. [Scripts](scripts/)
+1. [Scripts](#scripts)
 2. [Installation instructions and usage](#install)
 	* [Installation instruction for Linux based systems and MacOS](#install-linux)
 	* [Installation instruction for Windows systems](#install-windows)
