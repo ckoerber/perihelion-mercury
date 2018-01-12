@@ -11,7 +11,6 @@ The script files make use of the *Python* package [VPython](http://vpython.org/)
 
 # Table of Contents
 
-For more information see:
 1. [Scripts](#scripts)
 2. [Installation instructions and usage](#install)
 	* [Installation instruction for Linux based systems and MacOS](#install-linux)
@@ -22,7 +21,7 @@ For more information see:
 # <a name="scripts"></a> Scripts
 The *Python* scripts can be found in directory [py-scripts](py-scripts/) and the *Jupyter Notebook* scripts in the directory [ipynb-scripts](ipynb-scripts/).
 
-# <a name="install"></a> Scripts Installing and running VPython
+# <a name="install"></a> Installing and running VPython
 
 Here, we briefly explain how to install *Python* and *VPython* on different operating systems.
 
