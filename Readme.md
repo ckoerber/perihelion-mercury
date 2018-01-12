@@ -221,7 +221,7 @@ Authors:
 # <a name="license"></a> License
 MIT License
 
-Copyright (c) [2017] [Christopher Körber]
+Copyright (c) 2018 Christopher Körber
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
