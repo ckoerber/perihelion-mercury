@@ -20,11 +20,12 @@ scene.center     = vector(0, -2, 0)
 
 # definition of parameters
 # values computed using https://nssdc.gsfc.nasa.gov/planetary/factsheet
-rM0 = 4.6    # initial radius of Mercury orbit, in units of R0
-vM0 = 0.51   # initial orbital speed of Mercury, in units of R0/T0
-c_a = 1.01   # base acceleration of Mercur, in units of R0/T0**2
-rS  = 3.e-7  # Schwarzschild radius of Sun, in units of R0
-a2  = 8.2e-7 # specific angular momentum in units of R0**2
+rM0 = 4.60    # initial radius of Mercury orbit,in units of R0
+vM0 = 5.10e-1 # initial orbital speed of Mercury,in units of R0/T0
+c_a = 9.90e-1 # base acceleration of Mercur,in units of R0**3/T0**2
+rS  = 2.95e-7 # Schwarzschild radius of Sun,in units of R0
+ra2 = 8.19e-7 # specific angular momentum,in units of R0**2
+
 
 # initialize distance and velocity vectors of Mercury (at perihelion)
 vec_rM0 = vector(0, rM0, 0)
@@ -54,7 +55,7 @@ def evolve_mercury(vec_rM_old, vec_vM_old, alpha, beta):
     """
 
     # compute the factor coming from General Relativity
-    fact = 1 + alpha * rS / vec_rM_old.mag + beta * a2 / vec_rM_old.mag**2
+    fact = 1 + alpha * rS / vec_rM_old.mag + beta * ra2 / vec_rM_old.mag**2
     # compute the absolute value of the acceleration
     aMS = c_a * fact / vec_rM_old.mag**2
     # multiply by the direction to get the acceleration vector
@@ -70,9 +71,9 @@ def angle_between(v1, v2):
     return acos( dot(v1, v2) / (v1.mag * v2.mag) ) * 180. / pi
 
 # run parameters
-dt = 2. * vM0 / c_a / 10  # time step
-alpha      = 1.e6         # strength of 1/r**3 term
-beta       = 0.0          # strength of 1/r**4 term
+dt = 2. * vM0 / c_a / 200 # time step
+alpha      = 0.0          # strength of 1/r**3 term
+beta       = 1.e5         # strength of 1/r**4 term
 vec_r_last = vec_rM0      # previous position of Mercury
 turns      = 0            # number of completed turns
 max_turns  = 10           # maximum number of turns
@@ -106,6 +107,6 @@ while turns < max_turns:
 
 # display the average
 print("--------------------------------")
-print("average perihelion growth: delta Theta={avg}".format(
-    avg=sum_angle/(len(list_perih)-1)
+print("Average perihelion growth in arc sec per century: delta Theta={avg:1.2f}".format(
+    avg=sum_angle/(len(list_perih)-1) * 3. / beta * 3600 * 4.15 * 100 
 ))
