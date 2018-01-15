@@ -25,6 +25,8 @@ The *Python* scripts can be found in directory [py-scripts](py-scripts/) and the
 
 Here, we briefly explain how to install *Python* and *VPython* on different operating systems.
 
+For users familiar to *Python*, we recommend to `pip` install the `vpython` package for *Python3* (version number 3.5 or later).
+
 ## <a name="install-linux"></a> MacOS and other Linux systems
 
 ### Installing a Python distribution
