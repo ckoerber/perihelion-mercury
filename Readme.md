@@ -21,11 +21,13 @@ The script files make use of the *Python* package [VPython](http://vpython.org/)
 # <a name="scripts"></a> Scripts
 The *Python* scripts can be found in directory [py-scripts](py-scripts/) and the *Jupyter Notebook* scripts in the directory [ipynb-scripts](ipynb-scripts/).
 
+The scripts have been tested for *VPython* version 7.3.2.
+
 # <a name="install"></a> Installing and running VPython
 
 Here, we briefly explain how to install *Python* and *VPython* on different operating systems.
 
-For users familiar to *Python*, we recommend to `pip` install the `vpython` package for *Python3* (version number 3.5 or later).
+For users familiar to *Python*, we recommend to `pip` install the `vpython` package for *Python3* (*Python3* version number 3.5 or later).
 
 ## <a name="install-linux"></a> MacOS and other Linux systems
 
