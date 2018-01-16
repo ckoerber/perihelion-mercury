@@ -9,9 +9,6 @@ This folder contains four scripts:
 	The students have to write the creation of *VPython* objects as well as the computation of forces.
 3. `perihelion.ipynb`: An extension of `base_solution.ipynb`.
 	In addition to the visualization, this file also provides the numerical extraction of the perihelion motion.
-4. `three_body.ipynb`: A further extension of `base_solution.ipynb`.
-	This file also visualizes Venus.
-	Forces between Venus and Mercury are neglected.
-	This can be a further task for the students.
+
 
 Individual *Jupyter Notebook* cells can be executed by pressing `shift+enter`.
