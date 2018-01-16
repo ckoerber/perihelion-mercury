@@ -1,4 +1,5 @@
 # A primer to numerical simulations: The perihelion motion of Mercury
+
 This is the script repository for an upcoming publication.
 
 > **Abstract:** Numerical simulations are playing an increasingly important role in modern science.
@@ -8,6 +9,9 @@ In addition a method is discussed how to estimate the size of the effect a prior
 
 In this repository, we provide example scripts and templates which can be used by teachers and students to simulate, visualize and extract the perihelion motion of mercury caused by General Relativity.
 The script files make use of the *Python* package [VPython](http://vpython.org/).
+
+![Simulation screenshot: Mercury orbit](https://www.ckoerber.com/media/misc/perihelion.jpg "Simulation screenshot: Mercury orbit")
+
 
 # Table of Contents
 
