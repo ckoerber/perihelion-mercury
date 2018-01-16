@@ -67,16 +67,15 @@ sudo port install py36-pip
 Depending on the previously installed packages, this command might install further dependencies automatically (after confirmation).
 One should test if the installation was successful by typing `python3 --version` or `python3.6 --version` (depending on the installation name of *Python3*). This prints out the version of the *Python* installation (and should be larger than 3.5).
 
-Next one must update the package manager to get the newest versions for *python* packages.
+Next one must update the package manager to get the newest versions for *Python* packages.
 This is done by running
 ```bash
 pip3 install --upgrade --user pip wheel
 ```
-Depending on the installation name for *pip3*, one might has to exchange `pip3` &rarr; `pip3.6` (*MacPorts*).
+Depending on the installation name for *Pip3*, one might has to exchange `pip3` &rarr; `pip3.6` (*MacPorts*).
 This is best figured out by typing `pip` and pressing `tab`.
 Note that this just upgrades the packages for the current *user*.
 If one wants the *systemwide* installation, one again has to prepend `sudo` and can ignore the `--user` flag (`sudo pip3 install --upgrade pip wheel`).
-Furthermore, depending on the installed version of \code{pip}, it could have a different name.
 
 ### Installing VPython
 Finally, one can install **VPython** by running
@@ -155,7 +154,7 @@ One shall download the newest *Python 3.x* (with *x* greater equal 5) installer 
 The system type can be found by pressing `Windows+I`, navigating to **System &rarr; About** and looking at the **System type** entry.
 
 Installing one of the two executables creates a new *Windows* application called **Anaconda Prompt**.
-Starting this application opens a terminal which will be used to install the required *python* packages.
+Starting this application opens a terminal which will be used to install the required *Python* packages.
 At first, one should test if the *Anaconda* installation was successful by running the command 
 ```anconda prompt
 conda list
