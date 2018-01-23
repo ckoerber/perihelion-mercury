@@ -5,8 +5,8 @@ Extends 'base_solution.py' by keeping track of the location of the perihelion
 of Mercury. Computes and outputs the angle by which the perihelion changes over
 the course of the simulation.
 
-The stopping criterion is different than in 'base_solution.py'. 
-This code uses a fixed number of revolutions around the sun instead of a 
+The stopping criterion is different than in 'base_solution.py'.
+This code uses a fixed number of revolutions around the sun instead of a
 fixed run time.
 """
 
@@ -25,7 +25,7 @@ rM0 = 4.60    # Initial radius of Mercury orbit, in units of R0
 vM0 = 5.10e-1 # Initial orbital speed of Mercury, in units of R0/T0
 c_a = 9.90e-1 # Base acceleration of Mercury, in units of R0**3/T0**2
 rS  = 2.95e-7 # Schwarzschild radius of Sun,in units of R0
-ra2 = 8.19e-7 # Specific angular momentum, in units of R0**2
+rL2 = 8.19e-7 # Specific angular momentum, in units of R0**2
 
 
 # Initialize distance and velocity vectors of Mercury (at perihelion)
@@ -56,7 +56,7 @@ def evolve_mercury(vec_rM_old, vec_vM_old, alpha, beta):
     """
 
     # Compute the factor coming from General Relativity
-    fact = 1 + alpha * rS / vec_rM_old.mag + beta * ra2 / vec_rM_old.mag**2
+    fact = 1 + alpha * rS / vec_rM_old.mag + beta * rL2 / vec_rM_old.mag**2
     # Compute the absolute value of the acceleration
     aMS = c_a * fact / vec_rM_old.mag**2
     # Multiply by the direction to get the acceleration vector
@@ -110,5 +110,5 @@ while turns < max_turns:
 # Display the average perihelion growth
 print("--------------------------------")
 print("Average perihelion growth in arc sec per century: delta Theta={avg:1.2f}".format(
-    avg=sum_angle/(len(list_perih)-1) * 3. / beta * 3600 * 4.15 * 100 
+    avg=sum_angle/(len(list_perih)-1) * 3. / beta * 3600 * 4.15 * 100
 ))
