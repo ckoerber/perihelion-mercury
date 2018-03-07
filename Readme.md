@@ -1,6 +1,6 @@
 # A primer to numerical simulations: The perihelion motion of Mercury
 
-This is the script repository for an upcoming publication.
+This is the script repository for [this publication](https://arxiv.org/abs/1803.01678).
 
 > **Abstract:** Numerical simulations are playing an increasingly important role in modern science.
 In this work it is suggested to use a numerical study of the famous perihelion motion of the planet Mercury (one of the prime observables supporting Einsteins General Relativity) as a test case to teach numerical simulations to high school students.
