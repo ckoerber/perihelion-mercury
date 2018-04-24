@@ -27,7 +27,7 @@ rM0 = 4.60    # Initial radius of Mercury orbit, in units of R0
 vM0 = 5.10e-1 # Initial orbital speed of Mercury, in units of R0/T0
 c_a = 9.90e-1 # Base acceleration of Mercury, in units of R0**3/T0**2
 rS  = 2.95e-7 # Schwarzschild radius of Sun,in units of R0
-ra2 = 8.19e-7 # Specific angular momentum, in units of R0**2
+rL2 = 8.19e-7 # Specific angular momentum, in units of R0**2
 
 
 # Initialize distance and velocity vectors of Mercury (at perihelion)
